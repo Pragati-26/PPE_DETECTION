@@ -68,7 +68,7 @@ if uploaded_file is not None:
     
     with col1:
         st.subheader("Original Image")
-        st.image(input_image, use_container_width=True)
+        st.image(input_image, use_column_width=True)
         
     with col2:
         st.subheader("Safety Compliance Audit")
@@ -84,5 +84,5 @@ if uploaded_file is not None:
                 )
                 
                 # Display processed frame with labels, bounding boxes, and metadata
-                st.image(processed_img, use_container_width=True)
+                st.image(processed_img, use_column_width=True)
                 st.success("Audit complete!")
