@@ -35,3 +35,5 @@ streamlit run app.py
 
 - If the app fails to load the model, verify the model path in `app.py` and confirm `models/best.pt` is present.
 - The app uses the `PPEDetector` class from `src/detector.py`.
+
+deployed link : https://ppe-detection-bqjk.onrender.com/
