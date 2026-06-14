@@ -44,8 +44,8 @@ def load_ppe_detector():
     Loads the custom-trained weights into memory exactly once.
     Using cache_resource prevents reload delays on interface clicks.
     """
-    # Replace 'models/best.pt' with the exact path where your trained weights live
-    return PPEDetector(model_path="C:\\Users\\Pragati Kesharwani\\ppe-detection\\models\\best.pt")
+    # Use relative path for cross-platform compatibility
+    return PPEDetector(model_path="models/best.pt")
 
 try:
     detector = load_ppe_detector()
